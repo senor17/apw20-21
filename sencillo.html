@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <title>Etiquetas de Formato</title>
+        <style>
+            body{background-image: linear-gradient(45deg, red,orange,yellow,green,blue,indigo,violet);}
+            ul:hover{background-color: chartreuse;font-size: 15px;}
+            ul>li{display: inline;
+                    margin:10px;}
+
+            ul>li:hover{background-color: coral;}
+            .clsmenu{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color:red;}
+            .clase2 {background-color: darksalmon;}
+            button{background-image: linear-gradient(to right, rgb(0, 255, 34) , rgb(255, 208, 0));font-size: xx-large;}
+
+        </style>
+    </head>
+    <body>
+        <script>
+          window.alert("Hola bienvenido");
+        </script>
+        <h1 style="color: rgb(165, 42, 42); font-size: 20px;"> Uso de Etiquetas de Formato </h1>
+        <h3 class="clase2"> Etiquetas destinadas a dar sentido a una parte concreta de la página web:</h3>
+        <strong> para destacar una parte del texto </strong><br>
+        <em class="clsmenu clase2"> se emplea para enfatizar un texto; habitualmente se representa en cursiva </em><br>
+        <i title="Cambiar a voz a leer"> e </i><br>
+        <dfn> para definiciones</dfn><br>
+        <code onclick="alert('No me pinches')"> para bloques de código informático</code><br>
+        <samp> para ejemplos</samp><br>
+        <kbd> para texto de teclado</kbd><br>
+        <var> para definir una variable </var><br>
+        <cite> para una cita</cite><br>
+        <mark>Esto sirve para subrayar e texto</mark>
+        <p>Cada uno tiene una apariencia concreta. Lo importante aquí es que el texto adquiere un significado específico, dependiendo de las etiquetas que lo rodeen</p>
+        <ul>
+            <li>Inicio
+                <li>Acerca de mi</li>
+                <li>Contacta conmigo</li>
+              </ul>
+            </li>
+            <li class="clsmenu">Datos personales</li>
+            <li>Snack Tomato</li>
+          </ul>  
+        
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+          <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+          <img src="descarga.jfif" alt="paisaje" width="400" height="500">
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+          <button type="button">clic sobre mi</button>
+
+    </body>
+
+</html>
