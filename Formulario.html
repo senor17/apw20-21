@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+  <head>
+      <style>
+
+body{background-image: url(img98.jfif);padding: 140px; }
+
+p{background-color: rgb(8, 235, 216); text-align: center; margin: 10px; padding: 30px; font-family: Arial, Helvetica, sans-serif; }
+
+h2{background-color: rgb(8, 220, 235); text-align: center; margin: 10px; padding: 30px; font-family: Arial, Helvetica, sans-serif; }
+
+input{background-image: linear-gradient(to right, rgb(0, 255, 213) , rgb(0, 225, 255));}
+     
+      </style>
+
+  </head>
+
+    
+    <body>
+    
+    <h2>Formulario</h2>
+    <fieldset>
+    <form action="/registro.txt">
+      <button id="imprimir" onclick="imprimirWEB()">Imprime tu WEB</button>
+     <script>
+
+  
+          function imprimirWEB (){
+          window.print();
+          }
+      </script>
+      <br>
+      
+      <label for="fname">Nombre:</label><br>
+      <input type="text" id="fname" name="fname" value="Eustaquio"><br>
+      <label for="lname">Apellidos:</label><br>
+      <input type="text" id="lname" name="lname" value="Abichuelo"><br><br>
+      <input type="radio" id="male" name="gender" value="Hombre">
+      <label for="fname">fecha de nacimiento:</label><br>
+      <input type="text" id="fname" name="fname" value="fecha"><br>
+
+     <label> Edad: <input type="number" id="edad"></label>
+     
+     <script>
+       { tramoedad=prompt("Dame tu edad");
+        alert (" Tu edad es "+tramoedad);
+        if (tramoedad<18){
+            alert ("Eres un niño");}
+             else if (tramoedad<25){
+              alert ("Eres un adolescente");
+            }
+            else {alert("eres un adulto");}
+          }
+
+      </script><br>
+
+      <br>
+      <input type="radio" id="female" name="gender" value="Hombre">
+      <label for="male">Hombre</label><br>
+      <input type="radio" id="female" name="gender" value="Mujer">
+      <label for="female">Mujer</label><br>
+      <input type="radio" id="other" name="gender" value="Otro">
+      <label for="other">Otro</label><br><br>
+      <form action="/action_page.php">
+        <div class="campo">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" required>
+      </div>
+      </fieldset>
+
+        <fieldset>
+        <p>Hobby</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Megusta</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> No me gusta</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> No me interesa</label><br><br>
+        <label for="cars">Elige el que controles:</label>
+        <select name="Codigos" id="cars">
+          <option value="volvo">php</option>
+          <option value="saab">html</option>
+          <option value="opel">java</option>
+          <option value="audi">CSS</option>
+        </select>
+        <br><br>
+      </fieldset>
+      </form>
+
+      <input type="submit" value="Enviar"></input>
+      <form action="/action_page.php">
+        <input type="reset">
+      </form> 
+    </form> 
+    
+    
+    </body>
+    </html>
